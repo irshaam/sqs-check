@@ -1,0 +1,45 @@
+{
+  "name": "@irshaam/sqs-check",
+  "repository": "https://github.com/irshaam/sqs-check",
+  "description": "A simple tool to consume messages from an AWS SQS queue and publish them to an AWS SNS topic",
+  "author": "Mohamed Irshaam <mohamed.irshaam@gmail.com>",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "aws",
+    "sqs",
+    "sns",
+    "consumer",
+    "publisher"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sns": "^3.677.0",
+    "@aws-sdk/client-sqs": "^3.677.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0",
+    "sqs-consumer": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
+}

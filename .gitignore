@@ -1,0 +1,27 @@
+## Visual Studio Code
+.vscode/
+*.code-workspace
+
+## Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+.env.test
+
+# TypeScript
+dist/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build output directories
+build/
+
+# Test coverage
+coverage/
